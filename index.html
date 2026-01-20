@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba de Conocimiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Pantalla inicio -->
+    <div id="inicio">
+        <h1>Prueba de Conocimiento Bolivia</h1>
+        <p>Ingrese su nombre:</p>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+        <p>Seleccione un tema:</p>
+        <select id="selectorTema">
+            <option value="0">Tema 1: Deforestación y Cambio Climático</option>
+            <option value="1">Tema 2: Educación Digital y Brecha de Conectividad</option>
+            <option value="2">Tema 3: Historia y evolución del Internet</option>
+            <option value="3">Tema 4: Impacto de digitalización y redes sociales</option>
+            <option value="4">Tema 5: Inteligencia Artificial en educación</option>
+            <option value="5">Tema 6: Salud y sostenibilidad</option>
+            <option value="6">Tema 7: Economía circular y gestión de residuos</option>
+            <option value="7">Tema 8: Resistencia a antibióticos</option>
+            <option value="8">Tema 9: Retroceso de glaciares en el Altiplano boliviano</option>
+            <option value="9">Tema 10: Inteligencia Artificial Generativa y su Impacto en la Sociedad Boliviana</option>
+        </select>
+        <button onclick="iniciarPrueba()">Iniciar prueba</button>
+    </div>
+
+    <!-- Pantalla de prueba -->
+    <div id="prueba" class="oculto">
+        <h2 id="tituloPregunta"></h2>
+        <p id="temporizador">Tiempo: 60</p>
+
+        <div id="opciones"></div>
+
+        <div class="navegacion">
+            <button onclick="anterior()">Anterior</button>
+            <button onclick="siguiente()">Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Pantalla de resultado -->
+    <div id="resultado" class="oculto">
+        <h2>Resultados</h2>
+        <p id="puntaje"></p>
+        <div id="detalleErrores"></div>
+        <button onclick="location.reload()">Reiniciar</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
